@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Lab01_</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* Style the header */
+header {
+  background-color:rgb(250, 177, 19);
+  padding: 5px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  text-shadow: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 200px;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: 200px;
+  background-color: #ffffff;
+  text-align: justify;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container-img {
+  float: left;
+  border: 2px solid black;
+  width: 30%;
+  height: 200px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.topicBar {
+    background-color: rgb(48, 161, 196);
+    color: white;
+    text-align:center;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article, .container-img {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Eu, programador gráfico ?</h1>
+  </header>
+
+  <section>
+    <img class="profile-pic" src="https://lh3.googleusercontent.com/5JUFcQIrg3SLojrU0WsNlz65ei6lF4tpFgBt-GnE1Q7p9gicHPa2pCum7NnR7R8xHQFaMD11GDa24zZWDIbS22HFV_ZKurNtgqcuc8Is-zi-kuhe1D96AyAY4qF3I5-Hcrrml_FpOHqDxcEJas-69uayeDwOX7NAef6ZBGvgRt3e_BYqdwaEq-BsgU6-UQ0M5ApHqlGx1rrdj_DAJ9boSG-AGGtm_NGeySdmTvUqdqec-YLAIii6RFz10pFBTwCflGTO3iJmVFy5J5aXSi7V-8OdZ3BtzN62bcf0S70wUYPohatEPufBV4WyZVRDrP-92ObxzgmKRr3LgO01OPD2Nb4eUcBZAR5arbq-QZWu9OeJ-U8ToE1MkfaHAihK-3-IPMn-cLG9kgK7Xc19KdKrH8DG4BCfQ1M0apnlO7y19gTLfnmjUVUAePtAljEAJBAIv2nLsOsU-eRc3SZ1EdCrzZ_S7IAxe36JDkKMwHQJSkDnv-H_e_ApJBL7S3QwrIFuaTBfjiUhm7fVJtVvj54hUcvQvpjTNT3y9NrkxcEGCZEQtCdL5zDdWtRRoibBYLgqpq6_IyETGwfw7wn1NfttJnGJ2f_r1WYNo14ucsUXuYUYLKAVeqUoIPlrQjQ5Tt60ptdpLdxTLB9zDzlyAUB5Nnw28qekfNNJQi0u1jEURxd4suuHooRRTN77iG-QduCqQ6YNthwNmz89tFTd_RXc1JpZ_DqPVcXF6X9Fmn-mbS6QOF_OPiczCAF2Sv96N4kNdETJ-gApZ3_ioW5m8QSjUg8PXEasqjFEr1MxVFGYlenk0QFAWyAjU15MMHu9vX6ovBlvWvXFAga1sZefz5J6OIFUz-l2qlcIexEXytur2_ClyIaM_Fn-7J0oNPnKpfZbvn9IAe53TG-Ugygp5SAxNiJfQ6pgKIHVYHPk5GxNisUMDqowB82Dtx_ElJzcU750ofBl-NkgzKghYQ=s657-no?authuser=0"
+    alt="foto pessoal">
+    <h2 style="text-align: center;">
+      Sobre o autor:
+    </h2>
+    <p style="font-size: 16px; font-style: italic; margin: auto; margin-bottom: 20px; width: 50%; text-align: center;">
+      Vinícius é um camarada que além do princípio de prazer, o delírio ligado à produção de um certo saber, denega a natureza do sofrimento que termina por transformar o objeto em uma instância paranóica.
+      Não o bastante ele também deseja, portanto, a onipresença das fantasias subjacentes vela a enunciação que termina por transformar o objeto em uma instância paranóica. 
+    </p>
+  </section>
+
+  <section>
+    <div class="topicBar">
+      <h1>
+        Meus video-games favoritos:
+      </h1>
+    </div>
+
+    <p>
+      aksjdajshdlaksdjlashd
+    </p>
+
+    <div class="container-img">
+      <img src="https://dropsdejogos.uai.com.br/wp-content/uploads/sites/10/2021/02/super-mario-world-scaled.jpg" alt="Super Mario World">
+    </img> 
+    </div>
+    <article>
+      <h2>
+        Super Mario Wolrd
+      </h2>
+      <p>
+        Super Mario World, originalmente chamado no Japão de Super Mario Bros. 4, é um jogo eletrônico de plataforma desenvolvido pela Nintendo Entertainment Analysis & Development e publicado pela Nintendo, em 1990, para o console Super Nintendo Entertainment System.
+        <br><b>Data de lançamento inicial:</b> 21 de novembro de 1990
+      </p>
+      <a href="https://pt.wikipedia.org/wiki/Super_Mario_World">Saiba+ em wikipedia</a>
+    </article>
+
+    <div class="container-img">
+      <img src="https://1.bp.blogspot.com/-fZUGE5PEtpE/U_DocIwAw5I/AAAAAAAABE4/xr31cZUqbEg/s1600/the-legend-of-zelda-ocarina-of-time.jpg" alt="TLOZ-Ocarina do tempo">
+    </img> 
+    </div>
+    <article>
+      <h2>
+        The Legend Of Zelda - Ocarina Of the Time
+      </h2>
+      <p>
+        The Legend of Zelda: Ocarina of Time é um jogo eletrônico de ação e aventura desenvolvido e publicado pela Nintendo para o Nintendo 64. Foi lançado no Japão em 21 de novembro de 1998; na América do Norte em 23 de novembro de 1998; e na Europa em 11 de dezembro do mesmo ano.
+        <br><b>Data de lançamento inicial:</b> 21 de novembro de 1998
+      </p>
+      <a href="https://pt.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time">Saiba+ em wikipedia</a>
+    </article>
+
+    <div class="container-img">
+      <img src="https://image.winudf.com/v2/image1/Y29tLnJvY2tzdGFyZ2FtZXMuZ3RhdmNfc2NyZWVuXzBfMTU2Njk5ODU1OF8wMTI/screen-0.jpg?h=355&fakeurl=1&type=.jpg" alt="GTA VC">
+    </img> 
+    </div>
+    <article>
+      <h2>
+        Grand Theft Auto (GTA) - Vice City
+      </h2>
+      <p>
+        Grand Theft Auto: Vice City é um jogo eletrônico de ação-aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games. É o quarto título principal da série Grand Theft Auto e foi lançado em outubro de 2002 para PlayStation 2, em maio de 2003 para Microsoft Windows e em outubro de 2003 para Xbox.
+        <br><b>Data de lançamento inicial:</b> 29 de outubro de 2002
+      </p>
+      <a href="https://pt.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City">Saiba+ em wikipedia</a>
+    </article>
+  </section>
+
+
+  <section>
+    <div class="topicBar">
+      <h1>
+        Meus filmes e vídeos (gráficos) preferidos:
+      </h1>
+    </div>
+
+    <div class="container-img">
+      <img src="https://www.planocritico.com/wp-content/uploads/2020/11/Up-Altas-Aventuras.jpg" alt="UP" width="">
+      </img> 
+    </div>
+    <article>
+      <h2>
+        Up - Altas Aventuras
+      </h2>
+      <p>
+        Carl Fredricksen é um vendedor de balões que, aos 78 anos, está prestes a perder a casa em que sempre viveu com sua esposa, a falecida Ellie. Após um incidente, Carl é considerado uma ameaça pública e forçado a ser internado. Para evitar que isto aconteça, ele põe balões em sua casa, fazendo com que ela levante voo
+        <br><b>Data de lançamento inicial:</b> 4 de setembro de 2009
+      </p>
+      <a href="https://pt.wikipedia.org/wiki/Up_(filme)">Saiba+ em wikipedia</a>
+    </article>
+
+    <div class="container-img">
+      <img src="https://i.ytimg.com/vi/N9Zljgx_SSw/maxresdefault.jpg" alt="Viva">
+      </img> 
+    </div>
+    <article>
+      <h2>
+        VIVA - A vida é uma festa
+      </h2>
+      <p>
+        Apesar da proibição da música por gerações de sua família, o jovem Miguel sonha em se tornar um músico talentoso como seu ídolo Ernesto de la Cruz. Desesperado para provar seu talento, Miguel se encontra na deslumbrante e colorida Terra dos Mortos. 
+        <br><b>Data de lançamento inicial:</b> 4 de janeiro de 2018
+      </p>
+      <a href="https://pt.wikipedia.org/wiki/Coco_(filme)">Saiba+ em wikipedia</a>
+    </article>
+
+    <div class="container-img">
+      <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C9A38B17830BF1BCB4F069F4EF17C7316AAF10861B2EBE906583FE5CEC5960DB/scale?width=1200&aspectRatio=1.78&format=jpeg" alt="SOUL">
+      </img> 
+    </div>
+    <article>
+      <h2>
+        SOUL
+      </h2>
+      <p>
+        Joe é um professor de música do ensino médio apaixonado por jazz, cuja vida não foi como ele esperava. Quando ele viaja a uma outra realidade para ajudar outra pessoa a encontrar sua paixão, ele descobre o verdadeiro sentido da vida.
+        <br><b>Data de lançamento inicial:</b> 11 de outubro de 2020
+      </p>
+      <a href="https://pt.wikipedia.org/wiki/Soul_(filme)">Saiba+ em wikipedia</a>
+    </article>
+  </section>
+
+
+  <section>
+    <div class="topicBar">
+      <h1>
+        Outras imagens que considero interessante
+      </h1>
+    </div>
+
+    <div class="container-img">
+      <img src="">
+    </div>
+    <article>
+      <h2>
+        Some interesting image here
+      </h2>
+      <p>
+        bla
+        <br><b>Data de lançamento inicial:</b> 29 de outubro de 2002
+      </p>
+      <a href="https://pt.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City">Saiba+ em wikipedia</a>
+    </article>
+  </section>
+
+
+  <footer>
+    <p>footer</p>
+  </footer>
+
+</body>
+</html>
+
